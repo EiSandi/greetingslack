@@ -12,11 +12,11 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 ###VARIABLES THAT YOU NEED TO SET MANUALLY IF NOT ON HEROKU#####
 try:
         MESSAGE ="Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy; Dentist"
-        TOKEN = "xRFRP6eidVSTiNNLn542of8e"
+        TOKEN = "KMeMnjN43NFFWNYp3UfFbv7U"
         UNFURL = os.environ['UNFURL-LINKS']
 except:
-        MESSAGE = "Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy; Dentist"
-        TOKEN ="xRFRP6eidVSTiNNLn542of8e"
+        MESSAGE = "Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy; ,Dentist"
+        TOKEN ="KMeMnjN43NFFWNYp3UfFbv7U"
         UNFURL = 'FALSE'
 ###############################################################
 
