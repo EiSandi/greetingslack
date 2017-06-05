@@ -11,12 +11,12 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 ###VARIABLES THAT YOU NEED TO SET MANUALLY IF NOT ON HEROKU#####
 try:
-        MESSAGE = os.environ['WELCOME-MESSAGE']
-        TOKEN = os.environ['SLACK-TOKEN']
+        MESSAGE = "hello"
+        TOKEN = "xoxb-193419935047-kvDuEUVteQ1oP40WaYcTrkK3"
         UNFURL = os.environ['UNFURL-LINKS']
 except:
-        MESSAGE = 'Manually set the Message if youre not running through heroku or have not set vars in ENV'
-        TOKEN = 'Manually set the API Token if youre not running through heroku or have not set vars in ENV'
+        MESSAGE = "hello"
+        TOKEN ="xoxb-193419935047-kvDuEUVteQ1oP40WaYcTrkK3"
         UNFURL = 'FALSE'
 ###############################################################
 
