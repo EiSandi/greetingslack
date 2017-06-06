@@ -3,7 +3,7 @@ import json
 import requests
 import urllib
 import os
-from slackclient import SlackClient
+ 
 
 # Suppress InsecureRequestWarning
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -25,11 +25,11 @@ def parse_join(message):
     if (m['type'] == "team_join"):
         x = requests.get("https://slack.com/api/im.open?token="+TOKEN+"&user="+m["user"]["id"])
         x = x.json()
-        a=m["user"]["id"]
-        
-        sc = SlackClient(TOKEN)
-        result= sc.api_call("users.profile.get",  user=a)
-        print result
+
+
+        result=requests.get("https://slack.com/api/users.profile.get?token="+TOKEN)
+        result=result.json()
+        print result["profile"]["email"]
 
         x = x["channel"]["id"]
         if (UNFURL.lower() == "false"):
