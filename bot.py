@@ -26,10 +26,10 @@ def parse_join(message):
         x = requests.get("https://slack.com/api/im.open?token="+TOKEN+"&user="+m["user"]["id"])
         x = x.json()
 
-
         result=requests.get("https://slack.com/api/users.profile.get?token="+TOKEN)
         result=result.json()
-        print result["profile"]["email"]
+        # print result["profile"]["email"]
+        print result
 
         x = x["channel"]["id"]
         if (UNFURL.lower() == "false"):
