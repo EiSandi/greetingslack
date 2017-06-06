@@ -30,13 +30,13 @@ def parse_join(message):
         result=result.json()
         test=result["profile"]["email"]
         print("teset",test) 
-        
-        value=teset.split("@")
 
-        if value[1]=="gmail.com":
-            MESSAGE="HEllo gmail user"
-        else:
-            MESSAGE="hello other user"
+        value=teset.split("@")
+        print value
+        # if (value[1]=="gmail.com"):
+        #     MESSAGE="HEllo gmail user"
+        # else:
+        #     MESSAGE="hello other user"
 
 
         x = x["channel"]["id"]
