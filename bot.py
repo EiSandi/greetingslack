@@ -25,7 +25,7 @@ def parse_join(message):
     if (m['type'] == "team_join"):
         x = requests.get("https://slack.com/api/im.open?token="+TOKEN+"&user="+m["user"]["id"])
         x = x.json()
-        print x
+        print m["user"]
         x = x["channel"]["id"]
         if (UNFURL.lower() == "false"):
           xx = requests.post("https://slack.com/api/chat.postMessage?token="+TOKEN+"&channel="+x+"&text="+urllib.quote(MESSAGE)+"&parse=full&as_user=true&unfurl_links=false")
