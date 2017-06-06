@@ -28,11 +28,11 @@ def parse_join(message):
 
         result=requests.get("https://slack.com/api/users.profile.get?token=xoxp-192695256963-193201029506-193298116261-f98cdd67eea31b3f2eb6d0aca8b7f6ae")
         result=result.json()
-        test=result["profile"]["email"]
+        text=result["profile"]["email"]
         print("teset",test) 
 
-        value=teset.split("@")
-        print value
+        data = text.split("@")
+        print data
         # if (value[1]=="gmail.com"):
         #     MESSAGE="HEllo gmail user"
         # else:
