@@ -32,11 +32,14 @@ def parse_join(message):
         print("teset",text) 
 
         data = text.split("@")
-        print data
-        # if (value[1]=="gmail.com"):
-        #     MESSAGE="HEllo gmail user"
-        # else:
-        #     MESSAGE="hello other user"
+        value=data[1]
+        print value
+
+        if (value=="gmail.com"):
+            print("got itttttt")
+            MESSAGE="HEllo gmail user"
+        else:
+            MESSAGE="hello other user"
 
 
         x = x["channel"]["id"]
