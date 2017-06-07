@@ -27,7 +27,8 @@ def parse_join(message):
         result=requests.get("https://slack.com/api/users.profile.get?token=xoxp-192695256963-193224358161-193226599361-991ffffc877a35af8d1c91270d855f42")
         result=result.json()
         text=result["profile"]["email"]
-        print("teset",result) 
+        print("profile",result)
+        print("user's email",text)
 
         data = text.split("@")
         value=data[1]
