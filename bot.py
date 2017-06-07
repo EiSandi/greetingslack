@@ -20,10 +20,11 @@ except:
 
 def parse_join(message):
     m = json.loads(message)
+    print ("see m[user]",m)
     if (m['type'] == "team_join"):
         x = requests.get("https://slack.com/api/im.open?token="+TOKEN+"&user="+m["user"]["id"])
         x = x.json()
-        print ("see m[user]",x)
+
 
         result=requests.get("https://slack.com/api/users.profile.get?token=xoxp-192695256963-193224358161-193226599361-991ffffc877a35af8d1c91270d855f42")
         result=result.json()
