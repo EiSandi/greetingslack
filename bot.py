@@ -15,7 +15,7 @@ try:
         TOKEN = "xoxb-192115241664-GwLVUSLTCWStYLg3X7aOtCmo"
         UNFURL = os.environ['UNFURL-LINKS']
 except:
-        MESSAGE = "Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy;Dentist
+        MESSAGE = "Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy;Dentist"
         TOKEN ="xoxb-192115241664-GwLVUSLTCWStYLg3X7aOtCmo"
         UNFURL = 'FALSE'
 ###############################################################
