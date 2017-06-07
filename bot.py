@@ -34,9 +34,10 @@ def parse_join(message):
         print value
 
         if (value=="gmail.com"):
-            MESSAGE="HEllo gmail user"
+            MESSAGE = "Hi, I'm Office Uncle and I am here to help you understand what insurance you have, your coverage and to answer FAQs.I respond to keywords (for example MRI, physiotherapy, reimbursement), however to get you started -here's some suggested keywords for you to try:\nGP; Specialist; Surgery; Pregnancy;Dentist"
+
         else:
-            MESSAGE="hello other user"
+            MESSAGE="Hello!Welcome to Lumenlab"
 
 
         x = x["channel"]["id"]
